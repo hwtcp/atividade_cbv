@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Detalhes do Filme{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>{{ filme.titulo }}</h2>
+    <p><strong>Diretor:</strong> {{ filme.diretor }}</p>
+    <p><strong>Gênero:</strong> {{ filme.genero }}</p>
+    <p><strong>Ano de Lançamento:</strong> {{ filme.ano_lancamento }}</p>
+    <p><strong>Assistido:</strong> {% if filme.assistido %}✅ Sim{% else %}⏳ Não{% endif %}</p>
+    <p><strong>Sinopse:</strong> {{ filme.sinopse|default:"Não informada." }}</p>
+
+    <a href="{% url 'filme_update' filme.pk %}" class="btn btn-warning">Editar</a>
+    <a href="{% url 'filme_delete' filme.pk %}" class="btn btn-danger">Excluir</a>
+    <a href="{% url 'filme_list' %}" class="btn btn-secondary">Voltar</a>
+</div>
+{% endblock %}

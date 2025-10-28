@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}{% if object %}Editar Filme{% else %}Adicionar Filme{% endif %}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">{% if object %}Editar Filme{% else %}Adicionar Filme{% endif %}</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <div class="mb-3">
+            {{ form.titulo.label_tag }}
+            {{ form.titulo }}
+            {{ form.titulo.errors }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.diretor.label_tag }}
+            {{ form.diretor }}
+            {{ form.diretor.errors }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.genero.label_tag }}
+            {{ form.genero }}
+            {{ form.genero.errors }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.ano_lancamento.label_tag }}
+            {{ form.ano_lancamento }}
+            {{ form.ano_lancamento.errors }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.sinopse.label_tag }}
+            {{ form.sinopse }}
+            {{ form.sinopse.errors }}
+        </div>
+
+        <div class="form-check mb-3">
+            {{ form.assistido }}
+            {{ form.assistido.label_tag }}
+            {{ form.assistido.errors }}
+        </div>
+
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a href="{% url 'filme_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
