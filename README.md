@@ -19,20 +19,30 @@
 - python3 -m venv venv
 - source venv/bin/activate
 3. **Instalar dependências**
-- pip install -r requirements.txt
+'''python
+pip install -r requirements.txt
+'''
 4. **Configurar o projeto**
-  Aplicar migrações:
-- python manage.py makemigrations
-- python manage.py migrate
+- Aplicar migrações:
+'''python
+python manage.py makemigrations
+'''
+'''python
+python manage.py migrate
+'''
 
 ## Execução
 
 1. **Executar o projeto**
-- python manage.py runserver
-2. **Funcionalidades**
-- Funcionalidades
+'''python
+python manage.py runserver
+'''
+## Funcionalidades
+
 - Cadastro de filmes com informações básicas
 - Listagem de filmes cadastrados
 - Edição de filmes
 - Detalhes completos do filme
 - Excluir filme
+
+## Telas 
