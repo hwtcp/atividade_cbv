@@ -9,34 +9,46 @@
 ## Instalação
 
 1. **Clonar o repositório**
-- git clone https://github.com/hwtcp/atividade_cbv.git
-- cd atividade_cbv
+```python
+git clone https://github.com/hwtcp/atividade_cbv.git
+```
+```python
+cd atividade_cbv
+```
 2. **Criar e ativar um ambiente virtual**
   No windows:
-- python -m venv venv
-- venv\Scripts\activate
+```python
+python -m venv venv
+```
+```python
+.\venv\Scripts\activate
+```
   No Linux:
-- python3 -m venv venv
-- source venv/bin/activate
+```python
+python3 -m venv venv
+```
+```python
+source venv/bin/activate
+```
 3. **Instalar dependências**
-'''python
+```python
 pip install -r requirements.txt
-'''
+```
 4. **Configurar o projeto**
 - Aplicar migrações:
-'''python
+```python
 python manage.py makemigrations
-'''
-'''python
+```
+```python
 python manage.py migrate
-'''
+```
 
 ## Execução
 
 1. **Executar o projeto**
-'''python
+```python
 python manage.py runserver
-'''
+```
 ## Funcionalidades
 
 - Cadastro de filmes com informações básicas
@@ -47,3 +59,12 @@ python manage.py runserver
 
 ## Telas 
 
+![Tela inicial](imagens/index.png)
+
+![Tela de cadastro de filmes](imagens/cadastro.png)
+
+![Tela de editar filme](imagens/editar.png)
+
+![Tela de detalhar filme](imagens/detalhar.png)
+
+![Tela de excluir filme](imagens/excluir.png)
