@@ -9,15 +9,27 @@
 ## Instalação
 
 1. **Clonar o repositório**
-- git clone https://github.com/hwtcp/atividade_cbv.git
-- cd atividade_cbv
+```python
+git clone https://github.com/hwtcp/atividade_cbv.git
+```
+```python
+cd atividade_cbv
+```
 2. **Criar e ativar um ambiente virtual**
   No windows:
-- python -m venv venv
-- venv\Scripts\activate
+```python
+python -m venv venv
+```
+```python
+.\venv\Scripts\activate
+```
   No Linux:
-- python3 -m venv venv
-- source venv/bin/activate
+```python
+python3 -m venv venv
+```
+```python
+source venv/bin/activate
+```
 3. **Instalar dependências**
 ```python
 pip install -r requirements.txt
@@ -44,5 +56,9 @@ python manage.py runserver
 - Edição de filmes
 - Detalhes completos do filme
 - Excluir filme
+
+## Telas 
+
+
 
 ## Telas 
