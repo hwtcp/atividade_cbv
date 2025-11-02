@@ -62,7 +62,7 @@ python manage.py runserver
 **Tela de listagem**
 ![Tela inicial](imagens/index.png)
 **Tela de cadastrar filmes**
-![Tela de cadastro de filmes](imagens/cadastro.png)
+![Tela de cadastro de filmes](imagens/cadastro.jpg)
 **Tela de editar filme**
 ![Tela de editar filme](imagens/editar.png)
 **Tela de detalhar filme**
