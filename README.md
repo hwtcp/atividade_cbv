@@ -67,4 +67,4 @@ python manage.py runserver
 
 ![Tela de detalhar filme](imagens/detalhar.png)
 
-![Tela de excluir filme](imagens/excluir.png)
+
