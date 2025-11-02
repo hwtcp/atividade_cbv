@@ -59,7 +59,7 @@ python manage.py runserver
 
 ## Telas 
 
-![Tela inicial](imagens/index.png)
+![Tela inicial](imagens/index.jpg)
 
 ![Tela de cadastro de filmes](imagens/cadastro.png)
 
